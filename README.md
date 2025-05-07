@@ -7,10 +7,7 @@ A modern web application for screening and analyzing stocks, integrated with a F
 ## 🚀 Quick Start
 
 1. **Clone the repository:**
-   ```bash
-   git clone <your-repo-url>
-   cd financial-screener
-   ```
+
 2. **Install dependencies:**
    ```bash
    pnpm install
