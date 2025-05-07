@@ -75,32 +75,6 @@ A modern web application for screening and analyzing stocks, integrated with a F
 
 ---
 
-## ⚠️ Troubleshooting
-
-- **No stocks found?**
-  - Make sure you are logged in and have a valid JWT token in `localStorage`
-  - Check the backend is running and accessible at `http://localhost:8000`
-  - Use Swagger UI to test endpoints and check for errors
-- **422 Unprocessable Content?**
-  - Ensure you are sending `{ "symbol": "AAPL" }` in the POST body
-  - The symbol must be valid and supported by Yahoo Finance
-- **Failed to fetch sectors?**
-  - You must be authenticated to access `/stocks/sectors`
-  - Log in and ensure the token is present in requests
-- **CORS or Network Errors?**
-  - Make sure both frontend and backend are running on the correct ports
-  - Check browser console and network tab for error details
-
----
-
-## 🏗️ Best Practices
-
-- **Error Handling:** Show user-friendly error messages and log errors for debugging
-- **Loading States:** Use skeletons and spinners for async operations
-- **Data Formatting:** Use utility functions for currency, percentage, and market cap formatting
-- **Security:** Never store sensitive data in localStorage; use JWT only for authentication
-- **Performance:** Use pagination for large datasets and cache API responses when appropriate
-
 ---
 
 ## 📚 Further Documentation
@@ -109,8 +83,3 @@ A modern web application for screening and analyzing stocks, integrated with a F
 - **Frontend Integration Guide:** See `API_DOCUMENTATION.md` (if provided)
 - **Component Usage:** See code comments and the `components/` directory
 
----
-
-## 🤝 Support
-
-For questions or issues, contact the backend team or open an issue in this repository. 
